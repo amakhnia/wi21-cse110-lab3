@@ -181,7 +181,7 @@
     <input type="submit" value="Submit">
   </form>
   
-  <h1>The fieldset element</h1>
+  <h1>Fill out this</h1>
 
   <form action="/action_page.php">
     <fieldset>
@@ -196,15 +196,17 @@
       <input type="date" id="start" name="trip-start" value="2021-01-12" min="1999-01-01" max="2021-12-31">
       <label for="file">Upload file:</label>
       <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-      <input type="range" id="enjoy" name="enjoy" min="0" max="11">
-      <label for="enjoy">How much did you enjoy this page?</label>
       <input type="submit" value="Submit">
-      <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-      <label for="subscribeNews">Subscribe to newsletter?</label>
-      <button type="submit">Subscribe</button>
     </fieldset>
   </form>
-  
+    
+  <form action="/action_page.php">
+    <fieldset>
+      <input type="range" id="enjoy" name="enjoy" min="0" max="11">
+      <label for="enjoy">How much did you enjoy this page?</label>
+    </fieldset>
+  </form>
+      
   
   </body>
 </html>
