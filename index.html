@@ -14,6 +14,10 @@
     background-color: lightgrey;    
     text-align: center;
     }
+      
+    table, th, td {
+    border: 1px solid black;
+    }
     </style>
   </head>
   
@@ -49,11 +53,13 @@
   </aside>
   
   
-  
-  <footer>
-    <p>Author: Anastasiia Makhniaieva</p>
-    <p><a href="mailto:amakhnia@ucsd.edu">hege@example.com</a></p>
-  </footer>
+  <details>
+    <summary>This page</summary>
+    <p>Very random information but hopefully intertaining.</p>
+  </details>
+    
+  <button type="button" onclick="alert('Wow, you actually clicked the button!')">Click Me!</button>
+    
   
   <nav>
   <a href="/html/">HTML</a>
@@ -181,7 +187,7 @@
     <input type="submit" value="Submit">
   </form>
   
-  <h1>Fill out this</h1>
+  <h1>Fill out this form</h1>
 
   <form action="/action_page.php">
     <fieldset>
@@ -190,12 +196,14 @@
       <input type="text" id="fname1" name="fname1"><br><br>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email"><br><br>
+      <label for="url">Enter an https:// URL:</label>
+      <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
       <label for="phone">Enter your phone number:</label>
       <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-      <label for="date">Date:</label>
-      <input type="date" id="start" name="trip-start" value="2021-01-12" min="1999-01-01" max="2021-12-31">
-      <label for="file">Upload file:</label>
-      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+      <label for="date1">Date:</label>
+      <input type="date1" id="start" name="trip-start" value="2021-01-12" min="1999-01-01" max="2021-12-31">
+      <label for="file1">Upload file:</label>
+      <input type="file1" id="avatar" name="avatar" accept="image/png, image/jpeg">
       <input type="submit" value="Submit">
     </fieldset>
   </form>
@@ -206,7 +214,89 @@
       <label for="enjoy">How much did you enjoy this page?</label>
     </fieldset>
   </form>
-      
+    
+  <p>Choose your favorite color:</p>
+
+  <div>
+      <input type="color" id="favorite" name="favorite"
+            value="#e00000">
+      <label for="favorite">Favorite</label>
+  </div>
+  
+  <p>Would you like to subscribe:</p>
+    
+  <form>
+    <div>
+      <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+      <label for="subscribeNews">Subscribe to newsletter?</label>
+    </div>
+    <div>
+      <button type="submit">Subscribe</button>
+    </div>
+  </form>
+  
+  <h1>Please review my website here</h1>
+
+  <form action="/action_page.php">
+  <label for="w3review">Review of Anastasia's Page:</label>
+  <textarea id="w3review" name="w3review" rows="4" cols="50">
+    Here you can learn some stuff about her and then there are random things.
+    </textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+    
+  <h1>Do you like dogs?</h1>
+
+  <form action="/action_page.php" method="get">
+    <label for="doggo">Choose your answer to the question above:</label>
+    <input list="doggos" name="doggo" id="doggo">
+    <datalist id="doggos">
+      <option value="Yes">
+      <option value="YES">
+    </datalist>
+    <input type="submit">
+  </form>
+    
+  <p>Cats or Dogs?</p>
+
+  <form action="/action_page.php">
+    <label for="who">Choose an option:</label>
+    <select name="who" id="who">
+      <option value="cats">Cats</option>
+      <option value="dogs2">Dogs</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+    
+  <h1>Members</h1>
+
+  <table>
+    <colgroup>
+      <col span="2" style="background-color:grey">
+      <col style="background-color:lightgrey">
+    </colgroup>
+    <caption>Replies from members</caption>
+    <tr>
+      <th>Name</th>
+      <th>Replied?</th>
+    </tr>
+    <tr>
+      <td>Member 1</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Member 2</td>
+      <td>No</td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>Author: Anastasiia Makhniaieva</p>
+    <p><a href="mailto:amakhnia@ucsd.edu">amakhnia@ucsd.edu</a></p>
+  </footer>
+    
   
   </body>
 </html>
