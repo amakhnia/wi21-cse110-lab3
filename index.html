@@ -114,6 +114,7 @@
   <picture>
     <source media="(min-width:650px)" srcset="black_square.png">
     <source media="(min-width:465px)" srcset="luna_and_snow.png">
+    <img src="luna_and_snow.png" alt="Luna" style="width:auto;">
   </picture>
   
   <iframe src="https://www.linkedin.com/in/makhniaieva/" title="LinkedIn Anastasiia Makhniaieva">
@@ -196,10 +197,10 @@
       <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
       <label for="phone">Enter your phone number:</label>
       <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-      <label for="date1">Date:</label>
-      <input type="date1" id="start" name="trip-start" value="2021-01-12" min="1999-01-01" max="2021-12-31">
-      <label for="file1">Upload file:</label>
-      <input type="file1" id="avatar" name="avatar" accept="image/png, image/jpeg">
+      <label for="date">Date:</label>
+      <input type="date" id="start" name="trip-start" value="2021-01-12" min="1999-01-01" max="2021-12-31">
+      <label for="file">Upload file:</label>
+      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
       <input type="submit" value="Submit">
     </fieldset>
   </form>
@@ -269,11 +270,11 @@
   <h1>Members</h1>
 
   <table>
+    <caption>Replies from members</caption>
     <colgroup>
       <col span="2" style="background-color:grey">
       <col style="background-color:lightgrey">
     </colgroup>
-    <caption>Replies from members</caption>
     <tr>
       <th>Name</th>
       <th>Replied?</th>
@@ -286,11 +287,32 @@
       <td>Member 2</td>
       <td>No</td>
     </tr>
+    <tr>
+      <td>Member 3</td>
+      <td>Yes</td>
+    </tr>
   </table>
     
   <nav>
     <a href="/html/">HTML</a>
   </nav>
+    
+  <p>Click the button below to display the hidden content from the template element.</p>
+
+  <button onclick="showContent()">Show hidden content</button>
+
+  <template>
+    <h2>LUNA</h2>
+    <img src="luna_and_snow.png" width="214" height="204">
+  </template>
+
+  <script>
+  function showContent() {
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+  }
+  </script>
     
   <footer>
     <p>Author: Anastasiia Makhniaieva</p>
