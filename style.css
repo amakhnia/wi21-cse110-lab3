@@ -1,5 +1,5 @@
 body {
-  background-color: lightpink;
+  background-color: rgba(216, 99, 71, 0.5);
 }
 
 h1 {
@@ -15,7 +15,7 @@ p.center{
 
 #para1 {
   text-align: center;
-  color: pink;
+  color: rgb(255, 124, 176);
 }
 
 * {
@@ -24,7 +24,7 @@ p.center{
 }
 
 h1, p { 
-  background-color: lightblue;
+  background-color: #FFF0F5;
 }
 
 a[target="intro"] { 
@@ -37,20 +37,47 @@ a.highlight:hover {
 }
 
 div p {
+  color: hsl(172, 100%, 50%);
   background-color: hotpink;
 }
 
 div > p {
+  color: hsl(172, 100%, 50%);
   background-color: white;
 }
 
 div ~ p {
-  background-color: lightgreen;
+  background-color: hsla(27, 100%, 42%, 0.2);
 }
 
 div + p {
-  background-color: lightyellow;
+  background-color: hsl(194, 0%, 86%);
 }
+
+/*border styles */
+
+p.mix {
+  border-style: dotted dashed solid double;
+  border-width: 10mm;
+  border-color: rgb(102, 0, 102);
+  border-radius: 2cm;
+}
+
+p.dotted {
+  border-style: dotted;
+  border-width: 10px;
+  border-color: rgb(102, 0, 102);
+  border-radius: 10vw;
+}
+
+p.solid {
+  border-style: solid;
+  border-width: 1rem;
+  border-color: rgb(102, 0, 102);
+  border-radius: 10mm;
+}
+
+
 
 
 
