@@ -30,22 +30,7 @@ a[target="intro"] {
   background-color: yellow;
 }
 
-/* unvisited link */
-a:link {
-  color: blue;
-}
-
-/* visited link */
-a:visited {
-  color: pink;
-}
-
 /* mouse over link */
-a:hover {
-  color: yellow;
-}
-
-/* selected link */
-a:active {
-  color: green;
+a.highlight:hover {
+  color: hotpink;
 }
