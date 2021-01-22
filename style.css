@@ -8,7 +8,12 @@ h1 {
 }
 
 /*grouping selectors*/
-p.center, #para1 {
+p.center{
+  text-align: center;
+  color: pink;
+}
+
+#para1 {
   text-align: center;
   color: pink;
 }
@@ -18,7 +23,7 @@ p.center, #para1 {
   color: blue;
 }
 
-p { 
+h1, p { 
   background-color: lightblue;
 }
 
