@@ -6,3 +6,19 @@ h1 {
   color: black;
   margin-left: 20px;
 }
+
+p.center {
+  text-align: center;
+  color: pink;
+}
+
+#para1 {
+  text-align: center;
+  color: pink;
+}
+
+* {
+  text-align: left;
+  color: darkgrey;
+}
+
