@@ -1,4 +1,4 @@
-## Group Name
+# Group Name and Meeting Date
 
 # Links
 
@@ -26,6 +26,8 @@
 * cleaup
 * project monitoring
 * etc
+
+# Meeting Info
 
 **Type of meeting:** 
 
