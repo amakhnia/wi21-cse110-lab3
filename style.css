@@ -159,12 +159,11 @@ div.absolute {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+  justify-content: space-evenly;
+  align-content: center;
+  display: grid;
+  height: 400px;
+  grid-template-columns: auto auto auto;
   grid-gap: 10px;
   background-color: wheat;
   padding: 10px;
