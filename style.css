@@ -2,6 +2,12 @@ body {
   background-color: rgba(216, 99, 71, 0.5);
 }
 
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: floralwhite;
+  }
+}
+
 h1 {
   color: black;
   margin-left: 20px;
@@ -198,12 +204,6 @@ div.absolute {
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
-}
-
-@media only screen and (max-width: 800px) {
-  body {
-    background-color: floralwhite;
-  }
 }
 
 
