@@ -1,5 +1,6 @@
 body {
   background-color: rgba(216, 99, 71, 0.5);
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 800px) {
