@@ -148,52 +148,39 @@ div.absolute {
    box-sizing: border-box;
 }
 
-.container { 
+.container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100vh;
   flex-wrap: wrap;
-  flex-flow: column wrap;
-} 
+  justify-content: space-between;
+}
 
-.container > div {
-  font-size: 5vw;
-  padding: .5em;
-  color: antiquewhite;
-  margin: 10px;
-  border-radius: 3px;
-  background: mistyrose;
-  border: 5px solid silver;
+.item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
 }
-.container > div:nth-child(odd) {
-  width: 10%;
-}
-.container > div:nth-child(even) {
-  width: 20%;
-}
-.container > div:nth-child(2),
-.container > div:nth-child(4){
-  width: 60%;
-} 
 
-.item1 { grid-area: header; 
+.item:nth-child(3n) {
+  width: 100%;
 }
-.item2 { grid-area: menu; 
+
+.item1 { grid-area: one; 
 }
-.item3 { grid-area: main; 
+.item2 { grid-area: two; 
 }
-.item4 { grid-area: right; 
+.item3 { grid-area: three; 
 }
-.item5 { grid-area: footer; 
+.item4 { grid-area: four; 
+}
+.item5 { grid-area: five; 
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'one one one one one one two two'
+    'three three three four four five'
+    'three three three four four five';
   grid-gap: 10px;
   background-color: wheat;
   padding: 10px;
