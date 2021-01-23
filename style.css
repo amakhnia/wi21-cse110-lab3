@@ -159,7 +159,6 @@ div.absolute {
 
 .grid-container {
   display: grid;
-  justify-content: space-evenly;
   align-content: center;
   display: grid;
   height: 400px;
