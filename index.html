@@ -21,6 +21,18 @@
     table, th, td {
     border: 1px solid black;
     }
+      
+    .flex-container {
+    display: flex;
+    background-color: floralwhite;
+    }
+
+    .flex-container > div {
+    background-color: wheat;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    }
     </style>
     
   </head>
@@ -120,13 +132,13 @@
      <div class="absolute">Absolute</div>
   </div>
 
-<div class="container">
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-</div>
-  
-    
+  <div class="flex-container">
+    <div>1First</div>
+    <div>Second</div>
+    <div>Third</div>  
+  </div>
+
+
   <h1>Grid Example</h1>
 
   <div class="grid-container">
