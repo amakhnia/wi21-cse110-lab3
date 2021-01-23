@@ -148,27 +148,29 @@ div.absolute {
    box-sizing: border-box;
 }
 
-.item1 { grid-area: one; 
+.item1 { grid-area: header; 
 }
-.item2 { grid-area: two; 
+.item2 { grid-area: main; 
 }
-.item3 { grid-area: three; 
+.item3 { grid-area: sidebar; 
 }
-.item4 { grid-area: four; 
-}
-.item5 { grid-area: five; 
+.item4 { grid-area: footer; 
 }
 
 .grid-container {
   display: grid;
-  grid-template-areas:
-    'one one one one one one two two'
-    'three three three four four five'
-    'three three three four four five';
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
   grid-gap: 10px;
   background-color: wheat;
   padding: 10px;
 }
+
+
 
 .grid-container > div {
   background-color: seashell;
