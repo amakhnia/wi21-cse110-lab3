@@ -150,18 +150,19 @@ div.absolute {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .item {
-  width: 48%;
   height: 100px;
-  margin-bottom: 2%;
+  width: 100px; /* A fixed width as the default */
 }
 
-.item:nth-child(3n) {
-  width: 100%;
+.item-center { 
+  flex-grow: 1; /* Set the middle element to grow and stretch */
+}
+
+.item + .item { 
+  margin-left: 2%; 
 }
 
 .item1 { grid-area: one; 
