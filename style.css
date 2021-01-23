@@ -36,6 +36,11 @@ a.highlight:hover {
   color: hotpink;
 }
 
+/* selected link */
+a:active {
+  color: deeppink;
+}
+
 div p {
   color: hsl(172, 100%, 50%);
   background-color: hotpink;
@@ -76,6 +81,131 @@ p.solid {
   border-color: rgb(102, 0, 102);
   border-radius: 15mm;
 }
+
+box {
+  width: 300px;
+  border: 15px solid bisque;
+  padding: 50px;
+  margin: 20px;
+}
+
+box2 {
+  max-width: 500px;
+  border: 15px solid aliceblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+box3 {
+  width: 300px;
+  border: 15px solid antiquewhite;
+  padding: 25px 50px 75px 100px;
+  margin: 25px 50px 75px 100px;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+span {
+  display: block;
+}
+
+li {
+  display: inline;
+}
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid azure;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid aqua;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.container { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+} 
+
+.container > div {
+  font-size: 5vw;
+  padding: .5em;
+  color: antiquewhite;
+  margin: 10px;
+  border-radius: 3px;
+  background: mistyrose;
+  border: 5px solid silver;
+}
+.container > div:nth-child(odd) {
+  width: 10%;
+}
+.container > div:nth-child(even) {
+  width: 20%;
+}
+.container > div:nth-child(2),
+.container > div:nth-child(4){
+  width: 60%;
+} 
+
+.item1 { grid-area: header; 
+}
+.item2 { grid-area: menu; 
+}
+.item3 { grid-area: main; 
+}
+.item4 { grid-area: right; 
+}
+.item5 { grid-area: footer; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: wheat;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: seashell;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: floralwhite;
+  }
+}
+
 
 
 
