@@ -159,7 +159,7 @@ div.absolute {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 500px 500px 500px 500px;
+  grid-template-columns: 50px 50px 50px 50px;
   grid-template-rows: auto;
   grid-template-areas: 
     "header header header header header header header header"
