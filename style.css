@@ -89,14 +89,14 @@ p.solid {
 }
 
 box {
-  width: 300px;
+  width: 100px;
   border: 15px solid bisque;
   padding: 50px;
-  margin: 20px;
+  margin: 10px;
 }
 
 box2 {
-  max-width: 500px;
+  max-width: 200px;
   border: 15px solid aliceblue;
   padding-top: 50px;
   padding-right: 30px;
@@ -109,7 +109,7 @@ box2 {
 }
 
 box3 {
-  width: 300px;
+  width: 100px;
   border: 15px solid antiquewhite;
   padding: 25px 50px 75px 100px;
   margin: 25px 50px 75px 100px;
